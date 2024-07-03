@@ -1,0 +1,15 @@
+.fundo {
+    background-image: url(imagens/laranja.png);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+img {
+    margin-left: 50px;
+    height: 670px;
+}
+
+
+h1 {
+    margin-left: 50px;
+}

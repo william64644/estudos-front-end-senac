@@ -1,0 +1,21 @@
+body {
+    background-color: #d0d0d0;
+    margin: 0 auto;
+}
+
+#pagina {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    
+}
+
+#conteudo {
+    padding: 80px;
+}
+
+#email {
+    text-align: left;
+}

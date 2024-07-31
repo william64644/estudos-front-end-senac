@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+    <style>
+        body {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    
+<script>
+    let funcionario = prompt("Nome do funcionário:");
+    let salario = parseFloat(prompt("Salário:"));
+    let porcentagemDeAumento = parseFloat(prompt("Porcentagem De Aumento:"));
+    let valorAumento = salario * (porcentagemDeAumento / 100);
+    let novoSalario = salario + valorAumento;
+
+    document.write("<b>Funcionário: </b>" + funcionario + "<br>");
+    document.write("<b>Salário: </b>" + salario + "<br>");
+    document.write("<b>Porcentagem de aumento: </b>" + porcentagemDeAumento + "%<br>");
+    document.write("<b>Valor do aumento: </b>" + valorAumento + "<br>");
+    document.write("<b>Novo salário: </b>" + novoSalario + "<br>");
+</script>
+
+</body>
+</html>

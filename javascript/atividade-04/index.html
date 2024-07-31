@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+    <style>
+        body {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    
+<script>
+    let aluno = prompt("Nome do aluno:");
+    let notaPor = parseFloat(prompt("Nota de português:"));
+    let notaMat = parseFloat(prompt("Nota de Matemática:"));
+    let notaCie = parseFloat(prompt("Nota de Ciencias:"));
+    let media = (notaPor + notaMat + notaCie) / 3;
+
+    document.write("<b><font color='#2f5fad'>Boletim Escolar</font></b><br>");
+    document.write("<b>Aluno: </b>" + aluno + "<br>");
+    document.write("<b>Português: </b>" + notaPor + "<br>");
+    document.write("<b>Matemática: </b>" + notaMat + "<br>");
+    document.write("<b>Ciências: </b>" + notaCie + "<br>");
+    document.write("<b>Média: </b>" + media + "<br>");
+</script>
+
+</body>
+</html>

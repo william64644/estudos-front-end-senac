@@ -1,0 +1,42 @@
+<script>
+    // Crie um programa que solicite um número de 1 a 7 e imprima no console qual dia da semana corresponde ao número
+/*
+< - Menor
+> - Maior
+<= - Menor ou igual
+>- - Maior ou igual
+|| - OU
+&& - E
+== - Comparar mesmo valor
+=== - Comparar mesmo valor e tipo
+
+
+if (x == y){
+    console.log("xxx")
+}
+/( SE x for igual a Y, execute console.log("xxx"))
+*/
+
+
+
+    let numero = parseInt(prompt("Digite um número de 1 a 7"));
+
+    if (isNaN(numero) || numero < 1 || numero > 7) {
+        console.log("Número inválido")
+    } else if (numero === 1) {
+        console.log("Então hoje é segunda-feira")
+    } else if (numero === 2) {
+        console.log("Então hoje é terça-feira")
+    } else if (numero === 3) {
+        console.log("Então hoje é quarta-feira")
+    } else if (numero === 4) {
+        console.log("Então hoje é quinta-feira")
+    } else if (numero === 5) {
+        console.log("Então hoje é sexta-feira")
+    } else if (numero === 6) {
+        console.log("Então hoje é sábado")
+    } else if (numero === 7) {
+        console.log("Então hoje é domingo")
+    }
+
+</script>

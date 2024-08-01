@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let cor = prompt('Digite uma cor do farol de transito');
+       
+       switch (cor) {
+           case 'vermelho':
+           document.bgColor = "red";
+           document.write('<h1>Pare!</h1>')
+               break;
+           case 'amarelo':
+           document.bgColor = "yellow";
+           document.write('<h1>Atenção!');
+               break;
+           case 'verde':
+           document.bgColor = "green";
+           document.write('<h1>Siga!');
+               break;
+           default:
+           document.write('<h1>Cor inválida.');
+       }
+    
+    </script>
+</body>
+</html>

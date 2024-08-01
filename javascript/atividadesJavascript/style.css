@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    border: solid black 5px;
+    position: relative;
+    min-height: 98vh;
+    
+}
+
+main {
+    width: 65%;
+
+    margin: 10px auto;
+    border: solid black 5px;
+    padding: 0 20px;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+    
+}
+
+header {
+    text-align: center;
+    border-bottom: solid black 5px;
+    height: 10vh;
+}
+
+h1 {
+    line-height: 10vh;
+    font-size: 35px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: solid black 5px;
+}
+
+.atividade {
+    border-bottom: solid #3565c4 5px;
+    padding-bottom: 5px;
+}
+
+.atividadeTitle {
+    color: #e83333;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.atividadeDescription {
+    margin-bottom: 10px;
+}
+
+.atividadeLink {
+    color: #3565c4;
+    text-decoration: none;
+}

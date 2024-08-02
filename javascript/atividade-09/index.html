@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação etária</title>
+
+    <style>
+        table{
+            border: solid black 2px;
+            width: 240px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        td {
+            border: solid black 2px;
+            height: 30px;
+        }
+        #title {
+            text-align: center;
+            background-color: rgb(84, 178, 255);
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        let idade = parseInt(prompt("Digite a sua idade"))
+
+        let classificacao = '';
+
+        if (idade >= 65){
+            classificacao = "Idoso"
+        } else if (idade >= 18) {
+            classificacao = "Adulto"
+        } else if (idade >= 18) {
+            classificacao = "Adulto"
+        } else if (idade >= 12) {
+            classificacao = "Adolescente"
+        } else if (idade >= 0) {
+            classificacao = "Criança"
+        } else {
+            classificacao = "Inválido"
+        }
+
+        document.write('<table><tr><td colspan="2" id="title">Classificação etária</td></tr><tr><td>Idade:</td><td>' + idade + '</td></tr><tr><td>Classificação:</td><td>' + classificacao + '</td></tr></table>');
+    </script>
+</body>
+</html>

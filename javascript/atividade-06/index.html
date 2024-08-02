@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Ímpar</title>
+
+    <style>
+        table{
+            border: solid black 2px;
+            width: 220px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        td {
+            border: solid black 2px;;
+            height: 30px;
+        }
+        #title {
+            text-align: center;
+            background-color: rgb(84, 178, 255);
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        let num = parseInt(prompt("Digite um número inteiro"));
+        let resultado = ''
+        if (num % 2 === 0){
+             resultado = "Par";
+        } else {
+            resultado = "Ímpar";
+        }
+        
+        document.write('<table><tr><td colspan="2" id="title">Par ou ímpar</td></tr><tr><td>Número digitado:</td><td>' + num + '</td></tr><tr><td>Definição:</td><td>' + resultado + '</td></tr></table>');
+    </script>
+</body>
+</html>

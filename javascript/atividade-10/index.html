@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Sr. Joaquim</title>
+
+    <style>
+        table{
+            border: solid black 2px;
+            width: 400px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        td {
+            border: solid black 2px;;
+            height: 30px;
+        }
+        #title {
+            text-align: center;
+            background-color: rgb(84, 178, 255);
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        let paes = parseInt(prompt("Quantos pães deseja comprar"))
+        let preco = 0
+        let promocao = ''
+        if (paes >= 15){
+            preco = 0.8
+            promocao = "Promoção da padaria"
+            
+        } else {
+            preco = 1
+            promocao = "Fora do critério";
+        }
+
+        let custo = paes * preco
+
+        
+        document.write('<table><tr><td colspan="2" id="title">Padaria Sr. Joaquim</td></tr><tr><td>Quantidade de pães:</td><td>' + paes + '</td></tr><tr><td>Promoção da padaria:</td><td>' + promocao + '</td></tr></tr><tr><td>Valor unitário:</td><td>R$ ' + preco.toFixed(2) + '</td></tr></tr><tr><td>Valor a pagar:</td><td>R$ ' + custo.toFixed(2) + '</td></tr></table>');
+    </script>
+</body>
+</html>

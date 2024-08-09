@@ -1,0 +1,13 @@
+<style>
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+</style>
+
+<script>
+    let data = new Date()
+    console.log(data.getDate().toString().padStart(2, '0') + '/' + (data.getMonth() + 1).toString().padStart(2, '0') + '/' + data.getFullYear())
+    document.write("<h1>" + data.getDate().toString().padStart(2, '0') + '/' + (data.getMonth() + 1).toString().padStart(2, '0') + '/' + data.getFullYear() + "</h1>")
+
+</script>

@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Roboto";
         }
+
         body {
             background-color: #a8d8ff;
             height: 100vh;
@@ -18,18 +25,112 @@
             justify-content: center;
             align-items: center;
         }
+
         main {
             width: 650px;
             height: 450px;
-            background-color: #60b8ff;
+
+            display: block;
         }
 
+        .displays {
+            display: flex;
 
+            height: 25%;
+            background-color: #60b8ff;
+            border-radius: 10px;
+        }
+
+        .imgFruta {
+            height: 75%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #60b8ff;
+            border-radius: 10px;
+        }
+
+        .imgFruta img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .display {
+            width: 45%;
+            height: 75%;
+            margin: auto;
+            background-color: #165b94;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            color: white;
+        }
     </style>
 </head>
-<body >
 
-        <main></main>
+<body>
+
+    
+
+    <script>
+        function escreverPagina(nomePortugues, nomeIngles, nomeImagem) {
+            document.write('<main><div class="displays"><div class="display">' + nomePortugues + '</div><div class="display">' + nomeIngles + '</div></div><div class="imgFruta"><img src="frutas/' + nomeImagem + '"></div></main>')
+        }
+
+        let fruta = prompt("Digite o nome de uma fruta").toLocaleLowerCase()
+
+        switch (fruta) {
+            case "abacaxi":
+                escreverPagina("Abacaxi", "Pineapple", "abacaxi.jpg");
+                break;
+            case "banana":
+                escreverPagina("Banana", "Banana", "banana.jpg");
+                break;
+            case "caixa":
+                escreverPagina("Caixa", "Box", "caixa.jpg");
+                break;
+            case "caqui":
+                escreverPagina("Caqui", "Khaki", "caqui.jpg");
+                break;
+            case "coco":
+                escreverPagina("Coco", "Coconut", "banana.jpg");
+                break;
+            case "maçã":
+                escreverPagina("Maçã", "Apple", "maca.jpg");
+                break;
+            case "mamão":
+                escreverPagina("Mamão", "Papaya", "mamao.jpg");
+                break;
+            case "manga":
+                escreverPagina("Manga", "Mango", "manga.jpg");
+                break;
+            case "melancia":
+                escreverPagina("Melancia", "Watermelon", "melancia.png");
+                break;
+            case "melão":
+                escreverPagina("Melão", "Melon", "melao.jpg");
+                break;
+            case "morango":
+                escreverPagina("Morango", "Strawberry", "morango.png");
+                break;
+            case "pera":
+                escreverPagina("Pera", "Pear", "pera.jpg");
+                break;
+            case "tangerina":
+                escreverPagina("Tangerina", "Tangerine", "tangerina.jpg");
+                break;
+            case "uva":
+                escreverPagina("Uva", "Grape", "uva.jpg");
+                break;
+            default:
+                document.write('<main><div class="displays"><div class="display">ERRO</div><div class="display">ERRO</div></div><div class="imgFruta">Fruta não encontrada. Procure erros de digitação ou tente outra fruta</div></main>')
+        }
+    </script>
 
 </body>
+
 </html>

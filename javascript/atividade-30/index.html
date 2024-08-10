@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<script>
+    function ligar() {
+        img = document.getElementById("img");
+        img.src = "./lampadas/ligada.png";
+    }
+    function desligar() {
+        img = document.getElementById("img");
+        img.src = "./lampadas/desligadaa.png";
+    }
+</script>
+
+<body>
+
+
+    <img src="lampadas/desligadaa.png" id="img">
+    <br>
+
+    <input type="radio" name="aceso" onclick="ligar();" id="ligar">
+    <label for="ligar">Ligar</label>
+    <br>
+    <input type="radio" name="aceso" onclick="desligar();" id="desligar" checked>
+    <label for="desligar">Desligar</label>
+
+
+</body>
+
+</html>

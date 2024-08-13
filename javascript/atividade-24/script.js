@@ -1,0 +1,3 @@
+function escreverDisplay(input){
+    
+}

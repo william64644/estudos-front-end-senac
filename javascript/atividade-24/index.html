@@ -5,51 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     
 </body>
 
-    <main class="center">
+    <main class="center" id="calculadora">
     
         <table>
-            <tr><td colspan="4" id="display"><input type="text" name="" id=""></td></tr>
+            <tr id="displayTr"><td colspan="4" id="display"><input type="text" name="" id="inputBox"></td></tr>
     
-    
+            <tr id="displaySpacer"></tr>
             <tr>
-                <td>C</td>
-                <td>X²</td>
-                <td>√X</td>
-                <td>/</td>
+                <td onclick="apagar()" ondblclick="limpar()" onmouseup="resetFundo()">⌫/C</td>
+                <td onclick="quadrado()">X²</td>
+                <td onclick="raiz()">√X</td>
+                <td onclick="escreverDisplay('/')">/</td>
             </tr>
             <tr>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td>*</td>
+                <td onclick="escreverDisplay('7')">7</td>
+                <td onclick="escreverDisplay('8')">8</td>
+                <td onclick="escreverDisplay('9')">9</td>
+                <td onclick="escreverDisplay('*')">*</td>
             </tr>
             <tr>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>-</td>
+                <td onclick="escreverDisplay('4')">4</td>
+                <td onclick="escreverDisplay('5')">5</td>
+                <td onclick="escreverDisplay('6')">6</td>
+                <td onclick="escreverDisplay('-')">-</td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>+</td>
+                <td onclick="escreverDisplay('1')">1</td>
+                <td onclick="escreverDisplay('2')">2</td>
+                <td onclick="escreverDisplay('3')">3</td>
+                <td onclick="escreverDisplay('+')">+</td>
             </tr>
             <tr>
-                <td>0</td>
-                <td>.</td>
-                <td colspan="2">=</td>
+                <td onclick="escreverDisplay('0')">0</td>
+                <td onclick="escreverDisplay('.')">.</td>
+                <td onclick="calcular()" onmouseover="fundoAleatorioEscuro()" onmouseout="fundoAleatorioClaro()" id="btnIgual" colspan="2">=</td>
     
             </tr>
         </table>
     
     </main>
+    <script src="script.js"></script>
 
 
 </html>

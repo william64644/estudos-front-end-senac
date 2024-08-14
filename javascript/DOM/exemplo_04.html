@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteudo">Primeiro conteúdo</div>
+    <div class="conteudo">Segundo conteúdo</div>
+    <div class="conteudo">Terceiro Conteúdo</div>
+
+
+    <script>
+        // Selecionar todos os elementos com a classe conteúdo
+        let conteudos = document.getElementsByClassName("conteudo")
+
+        // Acessar o prineiro elemento
+        conteudos[0].textContent = "conteúdo alterado"
+
+        conteudos[1].textContent = "conteúdo alterado"
+
+        conteudos[2].textContent = "conteúdo alterado"
+    </script>
+</body>
+</html>

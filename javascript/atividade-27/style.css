@@ -1,0 +1,157 @@
+body {
+  display: block;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+#relogio1,
+#relogio2,
+#relogio3,
+#relogio3,
+#relogio4,
+#relogio5,
+#relogio6 {
+  display: flex;
+  font-size: 70px;
+  font-weight: bold;
+  width: fit-content;
+  margin: 15px;
+}
+
+#relogio1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#relogio2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+#relogio3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 6px rgba(0, 0, 0, 0.1);
+  height: 109px;
+}
+
+#relogio3 div {
+  box-shadow: inset 0px 0px 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: rgb(235, 230, 230);
+  border-radius: 15px;
+  margin: 10px;
+  max-height: 69px;
+}
+#relogio3 span {
+  line-height: 95px;
+}
+
+#relogio4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+#relogio4 div.sombreado {
+  box-shadow: inset 0px 0px 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: rgb(248, 248, 248);
+  border-radius: 15px;
+  margin: 10px;
+}
+#relogio4 span {
+  line-height: 95px;
+}
+
+#display4 {
+  display: flex;
+}
+#data {
+  box-shadow: none;
+}
+
+#data4 {
+  font-size: 19px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+#relogio5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  background-color: rgb(255, 123, 0);
+}
+
+#relogio5 div.sombreado {
+  box-shadow: inset 0px 0px 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  margin: 10px;
+  color: white;
+  border-bottom: solid 7px;
+}
+#relogio5 span {
+  line-height: 95px;
+}
+
+#display5 {
+  display: flex;
+}
+#data {
+  box-shadow: none;
+}
+
+#data5 {
+  font-size: 19px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+#relogio6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 60px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  background-color: rgb(15, 126, 218);
+}
+
+#relogio6 div.sombreado {
+  box-shadow: inset 0px 0px 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  margin: 10px;
+  color: white;
+  border: solid 7px;
+}
+#relogio6 span {
+  line-height: 105px;
+}
+
+#display6 {
+  display: flex;
+}
+#data {
+  box-shadow: none;
+}
+
+#data6 {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}

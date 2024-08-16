@@ -74,14 +74,13 @@ body {
 #display4 {
   display: flex;
 }
-#data {
-  box-shadow: none;
-}
+
 
 #data4 {
-  font-size: 19px;
+  font-size: 22px;
   font-weight: bolder;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #relogio5 {
@@ -115,9 +114,10 @@ body {
 }
 
 #data5 {
-  font-size: 19px;
+  font-size: 22px;
   font-weight: bolder;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #relogio6 {
@@ -151,7 +151,8 @@ body {
 }
 
 #data6 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bolder;
   margin-bottom: 20px;
+  text-align: center;
 }

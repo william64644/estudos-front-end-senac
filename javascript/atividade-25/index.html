@@ -1,105 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-
-    </style>
-</head>
-<body onkeypress="corDaLetra()">
-    <script>
-        function corDaLetra(){
-            let letra = 'A'
-            let cor;
-
-switch (letra.toUpperCase()) {
-    case 'A':
-        cor = 'rgb(0, 0, 255)'; // Azul
-        break;
-    case 'B':
-        cor = 'rgb(245, 245, 220)'; // Bege
-        break;
-    case 'C':
-        cor = 'rgb(128, 128, 128)'; // Cinza
-        break;
-    case 'D':
-        cor = 'rgb(255, 215, 0)'; // Dourado
-        break;
-    case 'E':
-        cor = 'rgb(80, 200, 120)'; // Esmeralda
-        break;
-    case 'F':
-        cor = 'rgb(255, 0, 255)'; // Fúcsia
-        break;
-    case 'G':
-        cor = 'rgb(128, 0, 32)'; // Grená
-        break;
-    case 'H':
-        cor = 'rgb(223, 115, 255)'; // Heliotrópio
-        break;
-    case 'I':
-        cor = 'rgb(75, 0, 130)'; // Índigo
-        break;
-    case 'J':
-        cor = 'rgb(0, 168, 107)'; // Jade
-        break;
-    case 'K':
-        cor = 'rgb(142, 204, 57)'; // Kiwi
-        break;
-    case 'L':
-        cor = 'rgb(230, 230, 250)'; // Lavanda
-        break;
-    case 'M':
-        cor = 'rgb(165, 42, 42)'; // Marrom
-        break;
-    case 'N':
-        cor = 'rgb(57, 255, 20)'; // Néon
-        break;
-    case 'O':
-        cor = 'rgb(204, 119, 34)'; // Ocre
-        break;
-    case 'P':
-        cor = 'rgb(192, 192, 192)'; // Prata
-        break;
-    case 'Q':
-        cor = 'rgb(255, 182, 193)'; // Quartzo
-        break;
-    case 'R':
-        cor = 'rgb(128, 0, 128)'; // Roxo
-        break;
-    case 'S':
-        cor = 'rgb(15, 82, 186)'; // Safira
-        break;
-    case 'T':
-        cor = 'rgb(64, 224, 208)'; // Turquesa
-        break;
-    case 'U':
-        cor = 'rgb(18, 10, 143)'; // Ultramarino
-        break;
-    case 'V':
-        cor = 'rgb(238, 130, 238)'; // Violeta
-        break;
-    case 'W':
-        cor = 'rgb(114, 47, 55)'; // Wine
-        break;
-    case 'X':
-        cor = 'rgb(255, 0, 0)'; // Xadrez (vermelho)
-        break;
-    case 'Y':
-        cor = 'rgb(255, 121, 97)'; // Yam
-        break;
-    case 'Z':
-        cor = 'rgb(44, 130, 201)'; // Zircão
-        break;
-    default:
-        cor = 'rgb(0, 0, 0)'; // Preto como fallback
-}
-
-console.log("A cor correspondente é: " + cor);
-
-        }
-    </script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body onkeypress="corDaLetra(event)" onkeyup="fundoBranco()">
+		<script src="script.js"></script>
+	</body>
 </html>

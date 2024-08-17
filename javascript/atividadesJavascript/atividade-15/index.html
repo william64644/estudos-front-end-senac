@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let numeroSecreto = 7;
+
+    let palpite = parseInt(prompt("Tente adivinhar o número entre 1 e 10:"));
+
+    while (palpite !== numeroSecreto) {
+        alert("Errado! Tente novamente.");
+        palpite = parseInt(prompt("Tente adivinhar o número entre 1 e 10:"));
+    }
+
+    alert("Parabéns! Você acertou o número!");
+
+    </script>
+</body>
+</html>

@@ -1,65 +1,78 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    box-sizing: border-box;
 }
 
-.container{
-    width: 70%;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e7e7ff;
+    color: #333333;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
-    border: solid black 5px;
-    position: relative;
-    min-height: 98vh;
-    
-}
-
-main {
-    width: 65%;
-
-    margin: 10px auto;
-    border: solid black 5px;
-    padding: 0 20px;
-    margin-bottom: 60px;
-    padding-bottom: 15px;
-    
+    padding: 20px;
 }
 
 header {
+    background-color: #0044cc;
+    color: white;
+    padding: 20px;
     text-align: center;
-    border-bottom: solid black 5px;
-    height: 10vh;
+    border-radius: 8px;
 }
 
-h1 {
-    line-height: 10vh;
-    font-size: 35px;
+header h1 {
+    margin-bottom: 10px;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    border-top: solid black 5px;
+header .subtitle {
+    font-size: 19px;
+    font-weight: 300;
+    text-align: left;
+}
+
+main {
+    margin-top: 20px;
 }
 
 .atividade {
-    border-bottom: solid #3565c4 5px;
-    padding-bottom: 5px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .atividadeTitle {
-    color: #e83333;
-    margin-top: 10px;
-    font-weight: bold;
+    font-size: 24px;
+    color: #0044cc;
+    margin-bottom: 10px;
 }
 
 .atividadeDescription {
     margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 .atividadeLink {
-    color: #3565c4;
     text-decoration: none;
+    color: #0044cc;
+    font-weight: bold;
+}
+
+.atividadeLink:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
 }

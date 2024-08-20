@@ -4,37 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterar cor</title>
-
-    <style>
-        main {
-            border: solid black 1px;
-            border-radius: 10px;
-            margin: 0 auto;
-            height: 300px;
-            width: 800px;
-            margin-top: 50px;
-            box-shadow: 2px 2px 4px 3px rgba(0,0,0,0.42);
-        }
-        button {
-            border: solid black 1px;
-            box-shadow: 2px 2px 4px 3px rgba(0,0,0,0.42);
-            border-radius: 10px;
-            background-color: lightblue;
-            margin-top: 50px;
-            font-size: 22px;
-            height: 50px;
-            width: 130px;
-        }
-        button:hover {
-            background-color: #8aaab4;
-        }
-        button:active {
-            background-color: #6d868d;
-        }
-        body {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -42,20 +12,6 @@
         <button id="button" onclick="alterarCor()">Alterar cor</button>
 
 
-    <script>
-        alterarCor()
-        function alterarCor(){
-            let cor = prompt("Digite uma cor HTML");
-            let box = document.getElementById("box");
-            box.style.backgroundColor = cor;
-        }
-
-        // TODO: tornar colocar todos os scripts e styles em arquivos externos
-        box = document.getElementById("box");
-        button = document.getElementById("button");
-
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

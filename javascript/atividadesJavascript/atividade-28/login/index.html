@@ -13,18 +13,19 @@
         <h1>Formulário de login</h1>
         <main>
             <img src="fotoPerfil.png" alt="">
-            <form action="">
+            <form onsubmit="return validarFormulario()">
                 <div class="label"><label for="usuario">Usuário:</label></div>
         
-                <input type="text" name="usuario" class="inputTexto">
+                <input type="text" name="usuario" class="inputTexto" id="usuario">
         
                 <div class="label"><label for="senha">Senha:</label></div>
         
-                <input type="text" name="senha" class="inputTexto">
+                <input type="text" name="senha" class="inputTexto" id="senha">
         
                 <button>Login</button>
                 <div class="label"><input type="checkbox" name="salvar" class="inputSalvar">
                 <label for="salvar">Salvar dados</label></div>
+                <div id="mensagemErro"></div>
             </form>
         </main>
         <div class="bottomOpts">
@@ -32,6 +33,7 @@
             <button class="btnEsqueceu">Esqueceu a senha?</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

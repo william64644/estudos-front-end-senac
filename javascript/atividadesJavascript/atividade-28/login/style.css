@@ -97,3 +97,7 @@ button:hover {
     font-size: 16px;
     background-color: rgb(0, 69, 97);
 }
+
+#mensagemErro {
+    color: red;
+}

@@ -67,28 +67,35 @@
             background-color: rgb(35, 177, 0);
             color: white;
         }
+        
+        #mensagemErro {
+            color: red;
+        }
     </style>
 </head>
 
 <body>
     <main>
         <h1>Cadastro</h1>
-        <form action="">
+        <form onsubmit="return validarFormulario()">
             <div class="label"><label for="nome">Nome:</label></div>
             
-            <input type="text" name="nome">
+            <input type="text" name="nome" id="nome">
         
             <div class="label"><label for="email">E-mail:</label></div>
        
-            <input type="text" name="email">
+            <input type="text" name="email" id="email">
        
             <div class="label"><label for="senha">Senha:</label></div>
            
-            <input type="text" name="senha">
+            <input type="text" name="senha" id="senha">
            
             <button>Cadastrar</button>
+            <div id="mensagemErro"></div>
         </form>
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

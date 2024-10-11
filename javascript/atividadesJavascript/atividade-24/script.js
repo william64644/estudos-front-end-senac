@@ -30,14 +30,14 @@ function fundoAleatorioEscuro(){
     let R = parseInt(Math.random() * 60)
     let G = parseInt(Math.random() * 60)
     let B = parseInt(Math.random() * 60)
-    document.body.style.backgroundColor = 'rgb(' + R + ',' + G + ',' + B + ')';
+    //document.body.style.backgroundColor = 'rgb(' + R + ',' + G + ',' + B + ')';
 }
 
 function fundoAleatorioClaro(){
     let R = parseInt(Math.random() * 100) + 150
     let G = parseInt(Math.random() * 100) + 150
     let B = parseInt(Math.random() * 100) + 150
-    document.body.style.backgroundColor = 'rgb(' + R + ',' + G + ',' + B + ')';
+    //document.body.style.backgroundColor = 'rgb(' + R + ',' + G + ',' + B + ')';
 }
 
 function resetFundo(){
